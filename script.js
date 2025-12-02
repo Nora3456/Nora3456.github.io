@@ -1,4 +1,4 @@
-function changeBackgroundColor() {
+function changeBackgroundColor(BackgroundColorButton) {
     document.body.style.backgroundColor = "lightblue";
 }
 
