@@ -78,6 +78,23 @@ function changeBackground() {
     const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
     document.body.style.backgroundColor = randomColor;
 }
+
+function getFortune() {
+    // create a list of random fortunes
+    const fortunes = [
+        "A pleasant surprise is waiting for you.",
+        "Adventure awaits you around the next corner.",
+        "Your hard work will pay off today.",
+        "You will find a hidden treasure today.",
+        "Your creativity will shine bright today."
+    ];
+    
+    // select a random value from the `fortunes` array
+    const randomIndex = Math.floor(Math.random() * fortunes.length);
+    
+    // post an alert that displays the random fortune
+    alert(fortunes[randomIndex]);
+}
 </script>
 </body>
 
