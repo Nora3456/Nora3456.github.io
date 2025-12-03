@@ -74,17 +74,18 @@
 function changeBackground() {
     const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
     document.body.style.backgroundColor = randomColor;
+
+    // Add this to your existing JavaScript
+function playBackgroundMusic() {
+    var audio = new Audio('jazz-lounge-elevator-music-332339.mp3');
+    audio.loop = true;
+    audio.play();
 }
-</script>
 
-<button onclick="playMusic()">Play Background Music</button>
-
-<audio id="bgMusic" src="jazz-lounge-elevator-music-332339.mp3" loop></audio>
-
-<script>
-function playMusic() {
-    const music = document.getElementById("bgMusic");
-    music.play();
+// Modify your window.onload function
+window.onload = function() {
+    playBackgroundMusic();
+};
 }
 </script>
 </html>
