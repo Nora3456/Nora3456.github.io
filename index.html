@@ -76,5 +76,16 @@ function changeBackground() {
     document.body.style.backgroundColor = randomColor;
 }
 </script>
+
+<button onclick="playMusic()">Play Background Music</button>
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<script>
+function playMusic() {
+    const music = document.getElementById("bgMusic");
+    music.play();
+}
+</script>
 </html>
 
