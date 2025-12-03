@@ -68,7 +68,14 @@
     <p><a href="page2.html"> Ok... click here to go to the next page...</a></p>
 </body>
 
-<button id="BackgroundColorButton">Click Me</button>
+<button onclick="changeBackground()">Change Background</button>
 
+<script>
+function changeBackground() {
+    // Pick a random color each click
+    const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = randomColor;
+}
+</script>
 </html>
 

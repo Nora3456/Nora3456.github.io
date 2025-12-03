@@ -43,9 +43,6 @@
         }
     </style>
 
-<button id="button">Click ME to change the background color!</button> 
-<script src="script.js"></script>
-
 </head>
 <body>
 <h1>Even More About Me</h1>
@@ -74,6 +71,16 @@
 <img src= "sunset1.jpeg" alt= "A photo of a bright red-orange sun reflecting of a lake, with hills in the background">
 <img src= "sunset2.jpeg" alt= "A photo of a sunset in the forest, with shades of pink, yellow, and blue" >
 
+
+<button onclick="changeBackground()">Change Background</button>
+
+<script>
+function changeBackground() {
+    // Pick a random color each click
+    const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = randomColor;
+}
+</script>
 </body>
 
 
